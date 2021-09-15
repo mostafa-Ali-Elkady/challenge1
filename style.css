@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+:root {
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  width: 450px;
+  border-radius: 15px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+  text-align: center;
+}
+.card h2 {
+  padding: 30px 0;
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+.card p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  color: #78787a;
+  font-weight: 500;
+  font-size: 16px;
+}
+.plan-area {
+  background-color: var(--Verypaleblue);
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.plan-area .text {
+    position: relative;
+    right:20px;
+
+}
+.plan-area .text p {
+    margin: 0;
+}
+.plan-area a {
+  text-decoration: none;
+  color: #4024dc9e;
+  font-weight: 600;
+}
+.card .first-link,
+.card .second-link {
+    display: block;
+}
+.card .first-link a,
+.card .second-link a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+.card .first-link a {
+    color: #fff;
+    background-color: #4024dc9e;
+    padding: 10px 75px;
+    border-radius: 10px;
+}
+.card .second-link a {
+    padding: 30px 0;
+    font-weight: 900;
+    color: var(--Darkblue)
+}
